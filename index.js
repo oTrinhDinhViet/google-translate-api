@@ -36,13 +36,13 @@ function translate(text, opts, gotopts) {
             sl: opts.from,
             tl: opts.to,
             hl: opts.to,
-            dt: ['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'ss', 't'],
+            dt: ['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'sos', 'ss', 't'],
             ie: 'UTF-8',
             oe: 'UTF-8',
-            otf: 1,
+            otf: opts.otf || 2,
             ssel: 0,
             tsel: 0,
-            kc: 7,
+            kc: opts.kc || 1,
             q: text
         };
         data[token.name] = token.value;
