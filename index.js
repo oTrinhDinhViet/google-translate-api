@@ -36,7 +36,7 @@ function translate(text, opts, gotopts) {
             sl: opts.from,
             tl: opts.to,
             hl: opts.to,
-            dt: ['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'sos', 'ss', 't'],
+            dt: opts.dt || ['at', 'bd', 'ex', 'ld', 'md', 'qca', 'rw', 'rm', 'ss', 't'],
             ie: 'UTF-8',
             oe: 'UTF-8',
             otf: opts.otf || 2,
